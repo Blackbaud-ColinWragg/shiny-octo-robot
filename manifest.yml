@@ -1,0 +1,9 @@
+---
+applications:
+  - name: # Replace with result of "my-application-$(whoami)"
+    stack: cflinuxfs2
+    buildpack: https://github.com/cloudfoundry/java-buildpack.git
+    path: build/libs/my-application.jar
+    instances: 1
+    memory: 256M
+    disk_quota: 256M
